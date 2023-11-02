@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         public void onLocationChanged(Location location) {
             longitud = location.getLongitude();
             latitud = location.getLatitude();
-            tvMensaje.setText("Esto: "+latitud+" , "+longitud+" Punto:"+location.getAccuracy());
+            tvMensaje.setText("Esto: "+latitud+" , "+longitud+" metros:"+location.getAccuracy());
 
             boton2.setText("Ok: "+ location.getAccuracy());
             if (location.getAccuracy()<=3){
